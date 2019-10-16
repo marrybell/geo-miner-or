@@ -1,0 +1,436 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap&subset=latin-ext'); */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap&subset=latin-ext');
+
+/* #212529; */
+
+* {
+    outline: none !important;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+
+
+header {
+    position: relative;
+    z-index: 10;
+    width: 1140px;
+}
+
+p {
+    font-size: 1.2rem;
+    ;
+}
+
+.navbar {
+    background: transparent !important;
+    transition: 0.7s;
+    border-bottom: 1px solid #efefef;
+}
+
+
+
+.navbar a {
+    color: #fff !important;
+}
+
+
+.navbar.scrolled a {
+    color: #91212f !important;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.navbar.scrolled {
+    /* background: rgba(143, 55, 69, 0.9) !important; */
+    background: rgba(255, 255, 255, 0.980) !important;
+    transition: 0.5s;
+    height: 62px;
+    box-shadow: 0px 0px 2px 0px #acacac;
+}
+
+
+
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #333 !important;
+    background-color: #fff;
+}
+
+.navbar-light .navbar-nav .active>.nav-link:hover {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.8);
+    /* background-color: transparent; */
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:visited {
+    color: rgba(255, 255, 255, 1);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+
+.banner {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url(img/cliffs-daylight-environment-2098403.jpg);
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.banner:before,
+.section2:before,
+.contact:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(#000, transparent);
+    pointer-events: none;
+}
+
+.banner:after,
+.section2:after,
+.contact:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(360deg, #000, transparent);
+    pointer-events: none;
+}
+
+.height100p {
+    height: 100vh;
+    font-size: 1.2rem;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.contentBox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.contentBox h1 {
+    font-weight: 800;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.contentBox p {
+    color: #fff;
+}
+
+.section1 {
+    padding: 100px 0;
+    background-color: #000;
+}
+
+.headerText {
+    color: #fff;
+
+}
+
+.headerText h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+
+}
+
+
+.placeBox {
+    position: relative;
+    max-width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #000;
+    margin-top: 30px;
+}
+
+.placeBox.imgBx {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.placeBox .imgBx img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.placeBox .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+}
+
+
+
+.placeBox .content h3 {
+    position: relative;
+    margin: 0;
+    padding: 20px 10px;
+
+    background-color: rgba(0, 0, 0, .9);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+
+}
+
+.placeBox .content h3 span {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+
+.bgBig {
+    background: url(img/amethyst-3203771_1920.jpg);
+    background-size: cover;
+}
+
+.section2 {
+    position: relative;
+    background: url(img/amethyst-3203771_1920.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding-top: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    color: white;
+    font-size: 1rem;
+    ;
+}
+
+.section2 h2 {
+    font-weight: bold;
+    color: white;
+
+    text-transform: uppercase;
+    font-size: 3.5rem;
+
+
+}
+
+.btnD1 {
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    outline: none;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.section3 {
+    position: relative;
+    padding: 100px 0;
+    background-color: #000;
+
+}
+
+.ser {
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.ser .imgBx {
+    height: 400px;
+    background-color: #fff;
+}
+
+.ser .imgBx img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ser .content {
+    padding: 15px;
+    color: #333;
+    height: 400px;
+    position: relative;
+}
+
+.ser . content h1 {
+    margin: 0 0 10px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+}
+
+.ser .img-thumbnail {
+    border-bottom: none;
+}
+
+.btnD2,
+.btnD2:hover {
+    background-color: #262626;
+    color: #fff;
+    border-radius: 25px;
+    padding: 15px 20px;
+    float: right;
+}
+
+.btnD2 {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.contact {
+    position: relative;
+    padding: 100px 0;
+    background: url(img/cave-desktop-backgrounds-dolomites-1366881.jpg);
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.contact .form {
+    position: relative;
+    z-index: 10;
+}
+
+.contact .form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    height: 50px;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.contact .form-control:focus,
+.contact .form-control:hover {
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    box-shadow: none;
+}
+
+.contact .textarea {
+    min-height: 100px;
+}
+
+.contact label {
+    color: #fff;
+    font-size: 1.25rem;
+
+}
+
+.btnD1 {
+    border: 2px solid #fff;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    outline: none;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+
+footer {
+    background-color: #000;
+    padding: 50px 0 0;
+}
+
+.sci {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+.sci li a {
+    color: #777;
+    font-size: 2em;
+    transition: 0.5s;
+
+}
+
+.sci li a:hover {
+    color: #fff;
+}
+
+.cpryt {
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
+}
+
+.cpryt a,
+.cpryt a:hover {
+    color: #fff;
+}
